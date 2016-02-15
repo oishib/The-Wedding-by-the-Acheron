@@ -232,6 +232,7 @@
 %%\edef\gamepath{\string${\gameclassname}} %$
 
 % The following code allows you to create a file named gamename_path.cls.  If that file exists, it will be read and the contents used as the game path.  Otherwise, this uses the environment variables to find the game path.  The file should have only the following line: \edef\gamepath{"path_to_game"}.  You may need to substitute forward slashes for backslashes in the file path.
+
 \IfFileExists{\gameclassname_path.cls}{\input{\gameclassname_path.cls}}{\edef\gamepath{\string${\gameclassname}}} %$
 
 \def\blues{\gamepath/Bluesheets}
